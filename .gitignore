@@ -1,5 +1,10 @@
 secrets/
 runtime/
+reports/
+.pylibs/
 __pycache__/
+*.pyc
 .env
 .deploy_key*
+build/
+release/

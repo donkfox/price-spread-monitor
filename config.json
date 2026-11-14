@@ -1,0 +1,60 @@
+{
+  "adb_path": "tools\\platform-tools\\adb.exe",
+  "adb_serial": "127.0.0.1:7555",
+  "mumu_cli_path": "",
+  "mumu_vmindex": 0,
+  "runtime_dir": "runtime",
+  "licensing": {
+    "enabled": false,
+    "server_url": "",
+    "ca_cert_file": "assets\\license-server-ca.pem",
+    "offline_grace_days": 3,
+    "verify_interval_hours": 6,
+    "timeout_seconds": 8,
+    "state_file": "runtime/license.json",
+    "purchase_urls": {}
+  },
+  "report_dir": "reports",
+  "estimated_profit_threshold_yuan": 30,
+  "recent_sale_max_age_days": 7,
+  "alert_quality": {
+    "a_min_observed_sales_7d": 5,
+    "a_min_active_days_7d": 3,
+    "a_max_latest_sale_age_hours": 48,
+    "a_max_sale_gap_hours": 72,
+    "a_max_price_range_percent": 10,
+    "a_plus_min_score": 96,
+    "a_min_score": 75,
+    "b_plus_min_score": 55,
+    "a_plus_min_profit_yuan": 80
+  },
+  "notification": {
+    "wecom_bot": {
+      "enabled": false,
+      "webhook_file": "secrets/wecom_webhook.txt",
+      "timeout_seconds": 8,
+      "retries": 2
+    },
+    "pushdeer": {
+      "enabled": false,
+      "pushkey_file": "secrets/pushdeer_pushkey.txt",
+      "timeout_seconds": 8,
+      "retries": 2
+    },
+    "ntfy": {
+      "enabled": false,
+      "server": "https://ntfy.sh",
+      "topic_file": "secrets/ntfy_topic.txt",
+      "priority": 5,
+      "timeout_seconds": 8,
+      "retries": 2
+    }
+  },
+  "scan": {
+    "interval_seconds": 60,
+    "pdd_pages_per_cycle": 4,
+    "max_candidates_per_cycle": 4,
+    "same_product_cooldown_seconds": 1800,
+    "unresolved_retry_seconds": 300
+  }
+}
